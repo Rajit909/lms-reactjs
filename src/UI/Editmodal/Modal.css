@@ -1,0 +1,69 @@
+.md p {
+  margin-bottom: 10px;
+}
+
+.md {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+#Name {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #efefef;
+  border: #ccc;
+}
+
+.save {
+  background: #3EB595;
+   font-size: 16px;
+}
+
+.save:focus{
+  /* background: #3EB595; */
+  outline: none;
+  border: 0;
+}
+
+.save:hover{
+  background: #3EB595;
+}
+
+.save:active {
+  background: #3EB595;
+  transform: scale(0.98);
+  
+}
+
+.clear {
+  background: #ED7A4D;
+  font-size: 16px;
+}
+
+.clear:focus{
+  /* background: #3EB595; */
+  outline: none;
+  border: 0;
+}
+
+.clear:hover{
+  background: #ED7A4D;
+}
+
+.clear:active {
+  background: #ED7A4D;
+  transform: scale(0.98);
+  
+}
+
+
+
+
+.footer-inner {
+  overflow: scroll;
+  overflow: auto;
+  max-height: 140px;
+}

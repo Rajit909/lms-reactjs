@@ -1,0 +1,223 @@
+.Loginpage {
+  height: 100vh;
+}
+.Loginpage .login-form {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+}
+.Loginpage h1,
+.Loginpage h2,
+.Loginpage h3,
+.Loginpage h4,
+.Loginpage h5,
+.Loginpage h6 {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+}
+.Loginpage .login-form {
+  display: grid;
+  place-items: center;
+  background: url("/images/signup.jpg");
+  background-size: cover;
+  text-align: center;
+}
+.Loginpage .content {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  /* background: #dde1e7;
+  */
+  border-radius: 10px;
+  /* box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  */
+}
+.Loginpage .content .text {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--fourth);
+}
+.Loginpage .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+.Loginpage .field:nth-child(1) {
+  margin-top: 0;
+}
+.Loginpage .field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff 73;
+}
+.Loginpage .field input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff 73;
+}
+.Loginpage .field span {
+  position: absolute;
+  color: var(--primary);
+  width: 50px;
+  line-height: 50px;
+}
+.Loginpage .field label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  pointer-events: none;
+  color: #666;
+}
+.Loginpage .field input:valid ~ label {
+  opacity: 0;
+}
+.Loginpage .forgot-pass {
+  text-align: left;
+  margin: 15px 5px 0;
+}
+.Loginpage .forgot-pass a {
+  font-size: 16px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.Loginpage button {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 600;
+  /* background: linear-gradient(to right, var(--primary) 50%, var(--fourth) 50%);
+  background-size: 200%;
+  background-position: bottom right;
+  */
+  background: var(--fourth);
+  /* background: #dde1e7;
+  */
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #fff 73;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 10;
+}
+.Loginpage button:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: var(--primary);
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  /* border-radius: 16px 32px;
+  */
+  -moz-transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px #000;
+}
+.Loginpage button:after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: var(--secondary);
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  /* border-radius: 16px 32px;
+  */
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.5s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px #000;
+}
+.Loginpage button:hover {
+  color: #fff;
+}
+.Loginpage button:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.Loginpage button:hover::after {
+  opacity: 1;
+  width: 120%;
+  /* background-position: bottom left;
+  */
+}
+.Loginpage button:focus {
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff 73;
+}
+.Loginpage .sign-up {
+  margin: 10px 0;
+  color: #595959;
+  font-size: 16px;
+}
+.Loginpage .sign-up a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.Loginpage .b-btn {
+  margin-top: 3rem;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.Loginpage .b-btn-2 {
+  text-decoration: none;
+  color: #222;
+}
+.Loginpage .b-btn-2 i {
+  color: orange;
+}
+.Loginpage .b-btn:hover,
+.Loginpage .b-btn-2:hover {
+  text-decoration: underline;
+}
+.Loginpage .b-btn i {
+  color: gray;
+}
+@media only screen and (min-width: 576px) {
+  .Loginpage body {
+    padding: 0;
+  }
+  .Loginpage .content {
+    width: 400px;
+    padding: 40px 30px;
+  }
+  .Loginpage .content .text {
+    font-size: 33px;
+    margin-bottom: 35px;
+  }
+  .Loginpage button {
+    font-size: 18px;
+  }
+}

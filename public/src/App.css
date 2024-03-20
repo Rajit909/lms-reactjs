@@ -1,0 +1,104 @@
+/* body{
+    background-color: rgb(250, 220, 220);
+} */
+/* community classes */
+.center{
+    text-align: center;
+}
+
+
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:blueviolet;
+}
+hr{
+    width: 100%;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(243, 191, 191);
+}
+.card{
+    height: 170px;
+    background-color: rgb(231, 241, 241);
+    width: 23%;
+    margin: 5px 0px;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    
+}
+span{
+    font-weight: 600;
+}
+.fa-solid{
+    font-size: 100px;
+}
+.board{
+    text-align: center;
+}
+button{
+    padding:3px 30px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+}
+.main-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-list>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border-radius: 5px;
+}
+#taskbtn{
+    border-radius: 25px;
+    margin-left: 5px;
+    color: red;
+}
+.form{
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFBF00;
+    background-image: linear-gradient(rgb(58, 54, 61), rgb(64, 66, 64), rgb(55, 52, 56));
+}
+
+.CommentForm{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding: 20px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgb(15, 14, 14), rgb(124, 123, 123));
+}
+input{
+    background-color: rgb(201, 195, 195);
+}
+textarea{
+    background-color: gray;
+}
+h3{
+    text-decoration: underline;
+}

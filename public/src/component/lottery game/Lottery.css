@@ -1,0 +1,20 @@
+/* communoty classes */
+.center{
+    text-align: center;
+}
+
+.main-continer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+span{
+    font-size: 30px;
+}
+.ticket{
+    border: 2px solid black;
+    padding: 0px 5px;
+    
+}

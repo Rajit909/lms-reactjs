@@ -1,0 +1,73 @@
+email: lmscloudtech@gmail.com
+password: lms123..
+
+----------------------------------------
+http://65.1.134.149/Package-One/LMS/
+
+http://65.1.134.149/Package-One/LMS/Admin/admin.html
+
+http://65.1.134.149/Package-One/LMS/user_dash/user-dashboard.html
+
+Package - 2
+
+http://65.1.134.149/Package-2/End-user%20side/LMS/
+
+http://65.1.134.149/Package-2/Admin-side/Institute/
+
+http://65.1.134.149/Package-2/Admin-side/faculty/
+
+http://65.1.134.149/Package-2/user_dash/
+
+Package - 3
+
+http://65.1.134.149/Package-Three/Package_3/
+
+http://65.1.134.149/Package-Three/Admin-side/
+
+http://65.1.134.149/Package-Three/superadmin/
+
+http://65.1.134.149/Package-Three/Package_3/user-dashboard.html
+
+---------------------------
+
+course-mode: online, offline, checkbox(choose both online, offline)
+course: duration based course, limit course, no limit
+share: 
+trainer share: coupon code? not discussed
+admin: mobile + email login
+----------
+course add: trainer profile & certificates, end-user can view that
+certificate: admin side, course complete, yes then give certificate else no re-apply when complete
+my fav, my bookmark - inside video they can notes
+discussion tab
+zoom integrations
+whatsapp group: near course, join whatsapp group(faculty, institution -  can put group invite & student can join), request one on one()
+notification: upcoming notifications, first name, last name, preferences, mail to students when new course is launching, upcoming notifiaction*)
+meeting room: package 2, 3 -> institite, faculties(teachers meeting)
+faculty admin -> tutorial video
+end user -> course single page
+
+
+----------------
+21-12-2021
+firebase security rules:
+https://fireship.io/snippets/firestore-rules-recipes/
+https://firebase.google.com/docs/firestore/security/rules-query
+
+
+
+doc: {
+  id: docId,
+  courseName: "",
+  ...courseDetails,
+  sections: [{
+    sectionName: "1.Intro",
+    topics: [{
+      topicName: "",
+      videoUrl: "",
+      materials: []
+    }, {}]
+  }, {
+    sectionName: "2.Sec",
+  }]
+}
